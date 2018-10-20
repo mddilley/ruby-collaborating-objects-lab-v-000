@@ -34,7 +34,7 @@ class Artist
     #   b. Create an Artist instance with that name
     # 2. Return the instance
     binding.pry
-    @@all.detect {|i| i.name == name} ? self.new(name) : name.name
+    @@all.detect {|i| i.name == name} | self.new(name)
   end
 
 end
