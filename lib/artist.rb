@@ -15,6 +15,10 @@ class Artist
     @songs << song
   end
 
+  def self.all
+    @@all
+  end
+
   def save
     # This method will:
     # 1. Add artist instance to @@all
