@@ -22,8 +22,10 @@ class Song
     parsed_file_name = file_name.split(" - ")
     # 2. Create a new song instance using the parsed string
     new_song = self.new(parsed_file_name[1])
-    # 3. Associate the new song with  
+    # 3. Associate the new song with artist from parsed string
     new_song.artist = parsed_file_name[0]
+    # 4. Return the new song instance
+    new_song
   end
 
 end
