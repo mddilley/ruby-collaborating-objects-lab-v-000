@@ -13,7 +13,7 @@ class Song
     # 2. New Artist object will be assigned to @artist
     @artist = Artist.find_or_create_by_name(name)
     # 3. Assign this song instance to the songs in the artist object
-    @artist.add_song(name)
+    @artist.add_song(self)
   end
 
   def self.new_by_filename(file_name)
