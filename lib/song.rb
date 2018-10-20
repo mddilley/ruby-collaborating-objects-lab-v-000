@@ -23,6 +23,7 @@ class Song
     artist = filename[0]
     song_title = filename[1]
     song = self.new(song_title)
+    artist=(arist)
   end
 
 end
