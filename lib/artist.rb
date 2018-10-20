@@ -33,7 +33,8 @@ class Artist
     #   a. Find the artist instance that has that name OR
     #   b. Create an Artist instance with that name
     # 2. Return the instance
-      name.name.nil? ? self.new(name) : name.name 
+    binding.pry
+    @@all.detect {|i| i.name == name} ? self.new(name) : name.name
   end
 
 end
