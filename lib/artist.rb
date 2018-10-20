@@ -35,7 +35,7 @@ class Artist
     # 2. Return the instance
     #binding.pry
     all.detect {|i| i.name == name} || self.new(name)
-    binding.pry
+    #binding.pry
   end
 
   def print_songs
