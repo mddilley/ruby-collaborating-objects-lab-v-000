@@ -16,6 +16,8 @@ class Artist
   end
 
   def self.all
+    # This method:
+    # 1. Exposes the value of @@all
     @@all
   end
 
